@@ -5,6 +5,8 @@ import React, { useState, useEffect } from "react";
 function DogPics() {
   const [images, setImages] = useState([]);
 
+
+  
   useEffect(() => {
     console.log("useEffect");
     fetch("https://dog.ceo/api/breeds/image/random/3")
@@ -15,7 +17,7 @@ function DogPics() {
       });
   });
 
-  console.log("render");
+
 
   return (
     <div>
